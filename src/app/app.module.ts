@@ -11,12 +11,7 @@ import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter/state/counter.reducer';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    StoreModule.forRoot({ counter: counterReducer }),
-  ],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     CounterComponent,
